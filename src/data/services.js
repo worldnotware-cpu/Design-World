@@ -1,0 +1,55 @@
+// `imgs` = images from the old site's Services page that best fit each service (matched by file name).
+// Services with no matching photo show a clearly labelled placeholder. `cat` links a service to a Work-page filter.
+export const SERVICES = [
+  { slug: 'branding', title: 'Branding', cat: null, imgs: ['in-shop-branding', 'stationery-printing', 'letterheads'],
+    short: 'A consistent identity across every printed touchpoint.',
+    long: 'From in-shop branding to letterheads and stationery, we keep your logo, colours and typography consistent so customers recognise your business wherever they meet it.',
+    points: ['In-shop branding', 'Letterheads and stationery', 'Promotional materials'] },
+  { slug: 'banners', title: 'Banners & Hoardings', cat: 'banners', imgs: ['vinyl-and-flex', 'sunpack-sheet'],
+    short: 'Flex and vinyl banners and large-format hoardings.',
+    long: 'Sharp, attractive flex and vinyl output for shop fronts, events and hoardings, with clear layouts that read at a distance.',
+    points: ['Flex and vinyl printing', 'Sunpack sheet', 'Hoardings, event and promotional banners'] },
+  { slug: 'brochures', title: 'Brochures', cat: 'brochures', imgs: ['product-catalogues', 'newsletters'],
+    short: 'Brochures and catalogues that explain your business clearly.',
+    long: 'Multi-panel brochures, product catalogues and newsletters with a clear hierarchy, readable typography and finishing that supports your brand.',
+    points: ['Company profiles and catalogues', 'Flyers and newsletters', 'Custom sizes, paper and finishes'] },
+  { slug: 'wedding-cards', title: 'Wedding Cards', cat: 'wedding-cards', imgs: ['wedding-invitations'],
+    short: 'Wedding invitations with beautiful printing and finishing.',
+    long: 'Invitations designed and printed to match the occasion, with the paper, finishing and layout you choose.',
+    points: ['Custom designs', 'Choice of paper and finishes', 'Quantities to suit your guest list'] },
+  { slug: 'visiting-cards', title: 'Visiting Cards', cat: 'visiting-cards', imgs: ['business-cards'],
+    short: 'Business cards that make a lasting first impression.',
+    long: 'Clean layouts built around your logo, printed on quality stock with the finish you prefer.',
+    points: ['Paper and thickness options', 'Matte, gloss and spot finishing', 'Layouts that keep key details easy to find'] },
+  { slug: 'packaging', title: 'Packaging Design', cat: 'packaging', imgs: ['stickers'],
+    short: 'Stickers, labels and packaging that carry your brand.',
+    long: 'Self-adhesive labels and stickers, and packaging artwork that keeps your brand consistent on the shelf.',
+    points: ['Stickers and labels', 'Die-cut prints', 'Packaging artwork'] },
+  { slug: 'posters', title: 'Posters', cat: 'posters', imgs: [],
+    short: 'Posters and flyers for offers, events and campaigns.',
+    long: 'Eye-catching posters and flyers with one clear message and a strong call to action.',
+    points: ['Event and offer posters', 'Flyers', 'Custom sizes'] },
+  { slug: 'logo-design', title: 'Logo Design', cat: 'logos', imgs: [],
+    short: 'Professional, customised logos that give your brand an identity.',
+    long: 'A good logo is simple, memorable, relevant, versatile and timeless. We design logos that work across cards, signage, packaging and screens.',
+    points: ['Custom logo concepts', 'Works at every size', 'Foundation for your wider branding'] },
+  { slug: 't-shirt-design', title: 'T-Shirt Design', cat: 'tshirts', imgs: [],
+    short: 'Custom T-shirt artwork for teams, events and brands.',
+    long: 'Artwork prepared for printing on T-shirts for teams, events and promotions.',
+    points: ['Custom artwork', 'Team and event designs', 'Brand-matched colours'] },
+  { slug: 'book-printing', title: 'Book Printing / Publishing', cat: null, imgs: ['books-and-magazines', 'diaries-and-calendars'],
+    short: 'Books, magazines, diaries and calendars, printed with care.',
+    long: 'From layout to binding, we print books, magazines, diaries and calendars with consistent colour and neat finishing.',
+    points: ['Books and magazines', 'Diaries and calendars', 'Custom sizes and quantities'] },
+];
+
+// Everything the old site lists on its Services page
+export const ALL_PRINTS = [
+  ['books-and-magazines', 'Books & Magazines'], ['business-cards', 'Business Cards'], ['certificates', 'Certificates'],
+  ['diaries-and-calendars', 'Diaries & Calendars'], ['foil-prints', 'Foil Prints'], ['id-cards', 'ID Cards'],
+  ['in-shop-branding', 'In-Shop Branding'], ['letterheads', 'Letterheads'], ['newsletters', 'Newsletters'],
+  ['product-catalogues', 'Product Catalogues'], ['screen-prints', 'Screen Prints'], ['stationery-printing', 'Stationery Printing'],
+  ['stickers', 'Stickers'], ['sunpack-sheet', 'Sunpack Sheet'], ['vinyl-and-flex', 'Vinyl & Flex'], ['wedding-invitations', 'Wedding Invitations'],
+];
+
+export const bySlug = (slug) => SERVICES.find((s) => s.slug === slug);
