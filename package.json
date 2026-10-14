@@ -8,7 +8,8 @@
     "prebuild": "node scripts/sitemap.mjs",
     "build": "vite build",
     "preview": "vite preview",
-    "assets": "node scripts/download-assets.mjs"
+    "assets": "node scripts/download-assets.mjs",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@fontsource-variable/sora": "^5.1.0",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.0",
-    "vite": "^6.0.0"
+    "vite": "^6.0.0",
+    "wrangler": "^4.0.0"
   }
 }
